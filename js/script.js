@@ -1,46 +1,37 @@
-console.log("Числа від 1 до 10:");
 let i = 1;
 while (i <= 10) {
-  console.log(i);
+    console.log(i);
+    i++;
 }
 
-console.log("Парні числа від 2 до 20:");
-for (let j = 2; j <= 20; j++) {
-  if (j % 2 === 0)
+for (let j = 2; j <= 20; j += 2) {
+    console.log(j);
 }
 
-console.log("Таблиця множення числа 7:");
 for (let k = 1; k <= 10; k++) {
-
+    console.log(`7 x ${k} = ${7 * k}`);
 }
 
-console.log("Числа від 1 до 5:");
-let m = 1; 
-while (m <= 5) {
+
+let n = 10;
+for (let l = 1; l < Infinity; l++) {
+    if (l >= n) {
+        break;
+    }
+    console.log(l);
 }
 
-console.log("Числа від 1 до 10, крім 7:");
-for (let n = 1; n <= 10; n++) {
-  if (n === 7) {
-    break;
-  }
-}
 
-console.log("Числа менші за n (n = 10):");
-const n = 10;
-let p = 0;
-while (true) {
-  if (p >= n) {
-    break;
-  }
-}
-
-console.log("Числа від 1 до 20, крім кратних 3:");
-let q = 1; 
-while (q <= 20) {
-    if (q % 3 === 0) {
-        q++; 
+let m = 1;
+while (m <= 20) {
+    if (m % 2 == 0) {
+        m++;
         continue; 
     }
-    q++; 
+    if (m === 3) {
+        m++;
+        continue;
+    }
+    console.log(m);
+    m++;
 }
